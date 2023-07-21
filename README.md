@@ -6,10 +6,10 @@ the node dependences have to be uploaded to aws lamba separately.
 
 Follow these steps to setup the lambda layer.
 
-1. Publish a module containing the project's entities and web request/response objects. 
+1. Compile a module containing the project's entities and web request/response objects. 
     - Instructions are at the following link: https://github.com/MichaelCh-svg/tweeter-entities-chemps-svg
-    - We publish this dependency as a module so that we can reuse the same code for the client and the server.
-2. Install the previously published module into this project. Run 'npm install [project'].
+    - We compile this dependency as a module so that we can reuse the same code for the client and the server.
+2. Install the previously compiled module into this project. Run 'npm install [project folder path]'.
 3. Run npm i to install all the packages into the node_modules folder.
 4. The lambda layer has to follow a specific file structure for the lamba to recognize it:
     1. Create a folder called nodejs.

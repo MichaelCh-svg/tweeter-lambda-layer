@@ -19,6 +19,7 @@
     "dotenv": "^16.0.3",
     "moment": "^2.29.4",
     "save-dev": "^0.0.1-security",
+    "tweeter-entities-chemps-svg": "file:../tweeter-entities-chemps-svg",
     "uuid": "^9.0.0"
   }
 }
