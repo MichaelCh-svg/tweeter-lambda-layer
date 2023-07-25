@@ -10,7 +10,7 @@ Follow these steps to setup the lambda layer.
 1. Compile a module containing the project's entities and web request/response objects. 
     - Instructions are at the following link: https://github.com/MichaelCh-svg/tweeter-entities-chemps-svg
     - We compile this dependency as a module so that we can reuse the same code for the client and the server.
-2. Install the previously compiled module into this project. Run 'npm install [project folder path]'.
+2. Link the previously compiled module into this project. Run 'npm link --save [project folder path]'.
 3. Run 'npm update' to update and install the dependencies.
     - if you want to install the dependencies without updating them, run 'npm i'.
             - Occasionally updates cause compatibility conflicts, and you may need to revert to an old dependency to get the project running before finding a fix.
