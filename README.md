@@ -12,9 +12,9 @@ Follow these steps to setup the lambda layer.
     - We compile this dependency as a module so that we can reuse the same code for the client and the server.
 2. Link the previously compiled module into this project. Run 'npm link --save [project folder path]'.
 3. Run 'npm update' to update and install the dependencies.
-    - if you want to install the dependencies without updating them, run 'npm i'.
-            - Occasionally updates cause compatibility conflicts, and you may need to revert to an old dependency to get the project running before finding a fix.
-    - if you later want to update the dependencies, remove the node_modules folder so that all files will be up to date (not just the ones that get overwritten).
+    - To install the dependencies without updating them, run 'npm i'.
+            - Occasionally updates cause compatibility conflicts, causing a need to revert to an old dependency to get the project running before finding a fix.
+    - To later want to update the dependencies, remove the node_modules folder so that all files will be up to date (not just the ones that get overwritten).
 4. The lambda layer has to follow a specific file structure for the lamba to recognize it:
     1. Create a folder called nodejs.
     2. Copy the node_modules folder into the nodejs folder.
@@ -26,6 +26,6 @@ Follow these steps to setup the lambda layer.
         1. Open up the aws lambda service.
         2. Lambda layer will be one of the options on the left panel.
     2. Click create layer and setup the layer.
-        1. Set the compatible runtime to Node.js 18.x. Otherwise, you will not be able to access this lambda from your lambda.
+        1. Set the compatible runtime to Node.js 18.x. Otherwise, the layer will not be accessible from the lambda.
         2. Set the code from the s3 bucket as the lambda layer's code.
 7. Add the lambda layer to each lambda as a custom lambda layer.
