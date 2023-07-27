@@ -17,7 +17,8 @@ Follow these steps to setup the lambda layer.
     - To later want to update the dependencies, remove the node_modules folder so that all files will be up to date (not just the ones that get overwritten).
 4. The lambda layer has to follow a specific file structure for the lamba to recognize it:
     1. Create a folder called nodejs.
-    2. Copy the node_modules folder into the nodejs folder.
+    2. Move the node_modules folder into the nodejs folder.
+    - If you copy the folder, it will not copy the symbolic link to the entities import.
     3. Zip the nodejs folder.
         - Make sure to zip the nodejs folder itself, and not just the folder's contents.
 5. Upload the zipped nodejs folder to s3. 
