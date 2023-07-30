@@ -19,6 +19,8 @@ Follow these steps to setup the lambda layer.
     1. Create a folder called nodejs.
     2. Move the node_modules folder into the nodejs folder.
     - If you copy the folder, it will not copy the symbolic link to the entities import.
+    - Alternatively, in the command line, symbolic links can be included in  a copy using 'cp -rL [source] [destination]'. 
+        - The -L option stands for looking up and following symbolic links.
     3. Zip the nodejs folder.
         - Make sure to zip the nodejs folder itself, and not just the folder's contents.
 5. Upload the zipped nodejs folder to s3. 
